@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Lobster:400|Raleway:300,400,500&display=swap" rel="stylesheet">
+  </head>
+  <style>
+  body {
+    min-width: 300px;
+    text-align: center;
+  }
+      h1 {
+        font-size: 1.5rem;
+        font-family: "Lobster";
+        text-align: center;
+      }
+
+      .yellow {
+        color: #FBE36D;
+    }
+
+
+      .blue {
+        color: #588BE4;
+    }
+
+     p, .button {
+       font-family: "Raleway", sans-serif;
+       font-size: 1rem;
+     }
+
+    .button {
+      background-color: #8ABFF0;
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      height: 2rem;
+      width: 4rem;
+      border-radius: 25px;
+      cursor: pointer;
+    }
+
+    .row {
+      padding:  0.30rem;
+      pointer-events: none;
+    }
+    .circle{
+      position: absolute;
+      height: 2rem;
+      width: 2rem;
+      border-radius: 50%;
+      background-color: #588BE4;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+    }
+
+    @keyframes moveCircleRight {
+      from {
+        left: 0;
+      }
+      to {
+        left: 50%;
+      }
+    }
+
+    @keyframes moveCircleLeft {
+      from {
+        left: 50%;
+      }
+      to {
+        left: 0;
+      }
+    }
+
+  </style>
+  <body class="popup">
+    <h1><span class="yellow">Dark</span><span class="blue">&nbsp;Mode</span></h1>
+    <p>it will change the look of your website from light mode to dark mode and vice versa.</p>
+
+    <div class="button">
+      <div class="row">On</div>
+      <div class="row">Off</div>
+      <div class="circle"></div>
+    </div>
+
+    <script src="popup.js">
+
+    </script>
+  </body>
+</html>
